@@ -1,0 +1,29 @@
+h1{
+    color: aquamarine;
+}
+table{
+    border: 1px solid aquamarine;
+    padding: 25px;
+
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 10px;
+}
+
+td,tr{
+    padding: 15px;
+    border-radius: 20px;
+}
+.wid{
+    width: 300px;
+}
+.bord{
+    border-radius: 25px;
+}
+.LibraryView{
+    border: 1px solid black;
+    height:350px;
+    width: 1100px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}

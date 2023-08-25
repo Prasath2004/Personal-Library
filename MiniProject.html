@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Library</title>
+    <link rel="stylesheet" href="mini.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body style="margin-top: 100px;">
+    <center>
+    <h1 style="color: aqua;">Welcome to My Personal Library</h1>
+    <table class="bord">
+        <tr>
+            <td>Enter the name of the Book:</td>
+            <td><input  type="text" id="name" name="name" placeholder="Title"/></td>
+        </tr>
+        <br> 
+        <tr>
+            <td>Enter the name of the Author:</td>
+            <td><input type="text" id="author" name="author" placeholder="Author"/></td>
+        </tr>
+        <tr>
+            <td>Year of the publication:</td>
+            <td><input type="number" min="1900" max="2099" name="year" id="year" /></td>
+        </tr>
+        <tr>
+            <td>Already red the book?</td>
+            <td>
+               <select name="status" id="stats">
+                <option name="no">No</option>
+                <option name="yes">Yes</option>
+                
+               </select>
+            </td>
+        </tr>
+        <tr colspan="2">
+            <td >
+                <input class="btn btn-outline-info" type="button" id="add" value="Add to library" onclick="bookObj(event)" >
+                
+            </td>
+            <td>
+                <input class="btn btn-outline-info" type="button" id="removelast" value="Remove Last Book" onclick="removeLastBook()">
+            </td>
+            <td>
+                <input class="btn btn-outline-info" type="button" id="addfirst" value="                 Add Front                     " onclick="bookOb(event)">
+            </td>
+            <td>
+                <input class="btn btn-outline-info" type="button" id="removeFirst" value="Remove First" onclick="removeFirst()">
+            </td>
+            <td>
+                <input class="btn btn-outline-info" type="button" name="onlytitle" id="title" value="Only Titles" onclick="titlesonly()">
+            </td>
+        </tr>
+            <tr>
+            <td>
+                <input class="btn btn-outline-info" type="button" name="viewLibrary" id="view" value="View Library" onclick="viewLib()">
+            </td>
+            <td>
+                <input class="btn btn-outline-info" type="button" name="Search" id="search" value="Search by Author Name" onclick="searchAuthor()">
+            </td>
+            <td>
+                <input class="btn btn-outline-info" type="button" name="beforeYear" id="BeforeYear" value="Search Book published before the given year" onclick="searchYear()">
+            </td>
+            <td>
+                <input class="btn btn-outline-info" type="button" name="removeTitle" id="RemoveTitle" value="Remove by Title" onclick="removeByTitle()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="btn btn-outline-info" type="button" name="ReadStatus" id="ReadStatus" value="Give the Readstatus" onclick="BookbyStatus()">
+            </td>
+            <td>
+                <input class="btn btn-outline-info" type="button" name="subLib" id="sublib" value="Sub Library" onclick="getSubArray()">
+            </td>
+        </tr>
+            
+       
+   
+    </table>
+    <div class="LibraryView">
+
+        <h1 style="color: aqua;">Library</h1>
+    <div id="lib">
+        
+        
+    </div>
+</div>
+
+    <script src="miniproject.js"></script>
+</center>
+</body>
+</html>
